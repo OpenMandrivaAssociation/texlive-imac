@@ -1,3 +1,9 @@
+# revision 17347
+# category Package
+# catalog-ctan /macros/latex/contrib/imac
+# catalog-date 2010-03-06 17:30:22 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-imac
 Version:	20100306
 Release:	1
@@ -42,6 +48,7 @@ provides a LaTeX package and a BibTeX style file.
 %doc %{_texmfdistdir}/doc/latex/imac/imac.pdf
 %doc %{_texmfdistdir}/doc/latex/imac/imac.tex
 %doc %{_texmfdistdir}/doc/latex/imac/readme.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ provides a LaTeX package and a BibTeX style file.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
