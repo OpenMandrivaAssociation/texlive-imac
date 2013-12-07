@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-imac
 Version:	20100306
-Release:	5
+Release:	6
 Summary:	International Modal Analysis Conference format
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/imac
