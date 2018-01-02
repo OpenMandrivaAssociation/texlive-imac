@@ -1,9 +1,3 @@
-# revision 17347
-# category Package
-# catalog-ctan /macros/latex/contrib/imac
-# catalog-date 2010-03-06 17:30:22 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-imac
 Version:	20170414
 Release:	1
@@ -33,12 +27,9 @@ provides a LaTeX package and a BibTeX style file.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/bibtex/bst/imac/imac.bst
-%{_texmfdistdir}/tex/latex/imac/imac.sty
-%doc %{_texmfdistdir}/doc/latex/imac/imac.bib
-%doc %{_texmfdistdir}/doc/latex/imac/imac.pdf
-%doc %{_texmfdistdir}/doc/latex/imac/imac.tex
-%doc %{_texmfdistdir}/doc/latex/imac/readme.txt
+%{_texmfdistdir}/bibtex/bst/imac
+%{_texmfdistdir}/tex/latex/imac
+%doc %{_texmfdistdir}/doc/latex/imac
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,17 +40,3 @@ provides a LaTeX package and a BibTeX style file.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100306-2
-+ Revision: 752730
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100306-1
-+ Revision: 718708
-- texlive-imac
-- texlive-imac
-- texlive-imac
-- texlive-imac
-
